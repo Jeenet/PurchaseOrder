@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_ship_to_state" label="State" language="en" table="x_295401_purchase_purchase_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_ship_to_state</element>
+            <help/>
+            <hint/>
+            <label>State</label>
+            <language>en</language>
+            <name>x_295401_purchase_purchase_request</name>
+            <plural>States</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-12-17 07:47:55</sys_created_on>
+            <sys_id>69c09437db522300e6c2fe1b68961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>State</sys_name>
+            <sys_package display_value="Purchase Order Management" source="x_295401_purchase">f78782c6db9a2300e6c2fe1b6896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Purchase Order Management">f78782c6db9a2300e6c2fe1b6896191b</sys_scope>
+            <sys_update_name>sys_documentation_x_295401_purchase_purchase_request_u_ship_to_state_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-12-17 07:47:55</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

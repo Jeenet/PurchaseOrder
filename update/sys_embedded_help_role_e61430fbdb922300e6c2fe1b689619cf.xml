@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_295401_purchase.invoice_user" name="x_295401_purchase.invoice_user">261430fbdb922300e6c2fe1b689619cd</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-17 10:22:17</sys_created_on>
+        <sys_id>e61430fbdb922300e6c2fe1b689619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>261430fbdb922300e6c2fe1b689619cd</sys_name>
+        <sys_package display_value="Purchase Order Management" source="x_295401_purchase">f78782c6db9a2300e6c2fe1b6896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Order Management">f78782c6db9a2300e6c2fe1b6896191b</sys_scope>
+        <sys_update_name>sys_embedded_help_role_e61430fbdb922300e6c2fe1b689619cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-17 10:22:17</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

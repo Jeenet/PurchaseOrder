@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_295401_purchase.validatePhoneNumber</api_name>
+        <client_callable>false</client_callable>
+        <description>On demand Script Include to validate phone number  syntax using regular expressions.</description>
+        <name>validatePhoneNumber</name>
+        <script><![CDATA[function validatePhoneNumber(phoneStr){
+
+	// Use JavaScript coercion to guarantee phoneNumber is a string
+	phoneStr = phoneStr + '';
+
+	//var phone = /^(0[1-9]|1[012])\-(19|20)\d{2}$/;
+
+	var phone = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;
+
+	// Compare emailStr against the allowed syntax as specified in the regular expression
+
+	// If emailStr has allowed syntax, return true, else return false
+
+	if(phoneStr.match(phone)){
+
+		return true;
+
+	}
+
+	else {
+
+		return false;
+
+	}
+
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-18 07:54:35</sys_created_on>
+        <sys_id>aa4bd1c0db622300e6c2fe1b689619ce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>validatePhoneNumber</sys_name>
+        <sys_package display_value="Purchase Order Management" source="x_295401_purchase">f78782c6db9a2300e6c2fe1b6896191b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Purchase Order Management">f78782c6db9a2300e6c2fe1b6896191b</sys_scope>
+        <sys_update_name>sys_script_include_aa4bd1c0db622300e6c2fe1b689619ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-18 08:05:37</sys_updated_on>
+    </sys_script_include>
+</record_update>

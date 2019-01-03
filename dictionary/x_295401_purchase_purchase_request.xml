@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Purchase Request" max_length="40" name="x_295401_purchase_purchase_request" sizeclass="11" type="collection">
+        <element attributes="omit_sys_original=true" label="Amount paid" max_length="20" name="u_amountpaid" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Approver" max_length="40" name="u_approver_name" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="u_bill_to_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Company name" max_length="40" name="u_bill_to_company" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="u_bill_to_email" type="email"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="u_bill_to_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone" mandatory="true" max_length="40" name="u_bill_to_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="State" max_length="40" name="u_bill_to_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street address" mandatory="true" max_length="40" name="u_bill_to_street" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip" mandatory="true" max_length="40" name="u_bill_to_zip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="u_category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Category 1" sequence="0" value="category1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Category 2" sequence="1" value="category2"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Category 3" sequence="2" value="category3"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" default="0" label="test" max_length="20" name="u_currency_1" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="no" label="Has SOW been signed?" max_length="40" name="u_has_sow_signed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Has legal sign off been received?" mandatory="true" max_length="40" name="u_legal_sign" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Nature of cost" max_length="40" name="u_ntureofcost" type="string">
+            <choice>
+                <element inactive_on_update="false" label="IT expense" sequence="0" value="it expense"/>
+                <element inactive_on_update="false" label="Non IT expense" sequence="1" value="non it expense"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Payment type" max_length="40" name="u_payment_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Prepaid" sequence="0" value="prepaid"/>
+                <element inactive_on_update="false" label="postpaid" sequence="1" value="postpaid"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="IT Planning Number" max_length="40" name="u_planning_number" type="string"/>
+        <element label="Remaining Amount" max_length="40" name="u_remaining_amount" read_only="true" type="integer"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="omit_sys_original=true" default="0" label="Requisition amount" max_length="20" name="u_requisitionamount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="project" label="Requisition Type" max_length="40" name="u_requisition_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Project" sequence="0" value="project"/>
+                <element inactive_on_update="false" label="IT Run Cost" sequence="1" value="it_run-cost"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Reason" max_length="4000" name="u_reson" type="string"/>
+        <element label="Same as bill to address" max_length="40" name="u_same_as_bill_to" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="u_ship_to_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Company name" max_length="40" name="u_ship_to_company" type="string"/>
+        <element label="Email" max_length="40" name="u_ship_to_email" type="email"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="u_ship_to_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone" mandatory="true" max_length="40" name="u_ship_to_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="State" max_length="40" name="u_ship_to_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street address" mandatory="true" max_length="40" name="u_ship_to_street" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip" mandatory="true" max_length="40" name="u_ship_to_zip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="no" label="Is SOW required?" max_length="40" name="u_sow_required" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Upload SOW" max_length="40" name="u_upload_sow" type="file_attachment"/>
+        <element label="Upload the legal sign off" max_length="40" name="u_uplod_legal_sign" type="file_attachment"/>
+    </element>
+</database>

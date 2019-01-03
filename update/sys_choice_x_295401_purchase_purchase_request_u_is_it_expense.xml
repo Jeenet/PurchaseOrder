@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_is_it_expense" table="x_295401_purchase_purchase_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_is_it_expense</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>x_295401_purchase_purchase_request</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-12-12 11:28:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b43974edbde2300e6c2fe1b689619b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-12-12 11:28:28</sys_updated_on>
+            <value>yes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_is_it_expense</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>x_295401_purchase_purchase_request</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-12-12 11:28:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d743974edbde2300e6c2fe1b689619b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-12-12 11:28:28</sys_updated_on>
+            <value>no</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_is_it_expense</element>
+            <name>x_295401_purchase_purchase_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-12-12 11:28:28</sys_created_on>
+            <sys_id>9343974edbde2300e6c2fe1b689619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_is_it_expense</sys_name>
+            <sys_package display_value="Purchase Order Management" source="x_295401_purchase">f78782c6db9a2300e6c2fe1b6896191b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Purchase Order Management">f78782c6db9a2300e6c2fe1b6896191b</sys_scope>
+            <sys_update_name>sys_choice_x_295401_purchase_purchase_request_u_is_it_expense</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-12-12 11:28:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

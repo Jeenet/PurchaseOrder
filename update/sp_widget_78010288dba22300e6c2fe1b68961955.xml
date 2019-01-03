@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>all_purchase_orders</id>
+        <internal>false</internal>
+        <link/>
+        <name>All Purchase Orders</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	//create an array to populate orders
+	data.orders = [];
+	var ordersGR = new GlideRecord('x_295401_purchase_purchase_request');
+	//ordersGR.addQuery('user', gs.getUser().getID());
+	ordersGR.orderByDesc('sys_created_on');
+	ordersGR.query();
+	while (ordersGR.next()) {
+		var orderObj = {};
+		//use service portal helper method to get some display values
+		$sp.getRecordDisplayValues(orderObj, ordersGR, 'number,u_approver_name,state,u_amountpaid,u_remaining_amount,u_requisitionamount,sys_id');
+		//get the first 20 characters of the short description
+		orderObj.shortDesc = ordersGR.getValue('short_description');
+		//push the populated obj into the array
+		data.orders.push(orderObj);
+	}
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-18 10:36:46</sys_created_on>
+        <sys_id>78010288dba22300e6c2fe1b68961955</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>All Purchase Orders</sys_name>
+        <sys_package display_value="Purchase Order Management" source="x_295401_purchase">f78782c6db9a2300e6c2fe1b6896191b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Purchase Order Management">f78782c6db9a2300e6c2fe1b6896191b</sys_scope>
+        <sys_update_name>sp_widget_78010288dba22300e6c2fe1b68961955</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-19 10:30:21</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title pull-left">
+      ${Purchase orders}
+    </h3>
+  </div>
+  <div class="list-group">
+    <a class="list-group-item" ng-repeat="order in data.orders">
+      <h4 class="list-group-item-heading">
+        {{order.number}}
+      </h4>
+      <p class="list-group-item-text">
+        {{order.shortDesc}}
+      </p>
+    </a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

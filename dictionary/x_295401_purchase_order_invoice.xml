@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Purchase Invoice" max_length="40" name="x_295401_purchase_order_invoice" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Invoice Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remaining amount" max_length="40" name="u_balance" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Bill to Address" max_length="999" name="u_bill_to" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Created" max_length="40" name="u_date_created" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Invoice date" max_length="40" name="u_invoice_date" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Amount Paid" max_length="40" name="u_paid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="1" label="Payment Status" max_length="40" name="u_payment_status" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="2"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Payment Type" max_length="40" name="u_payment_type" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Purchase Order" max_length="40" name="u_purchase_order" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Ship to Address" max_length="999" name="u_ship_to" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="40" name="u_short_description" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Total Amount" max_length="40" name="u_total" read_only="true" type="string"/>
+    </element>
+</database>
